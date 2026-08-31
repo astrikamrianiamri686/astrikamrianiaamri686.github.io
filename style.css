@@ -1,0 +1,802 @@
+/* =========================
+   CSS DASAR
+========================= */
+
+body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #fff0f6;
+    color: #5b3a52;
+}
+
+
+/* =========================
+   SELECTOR HTML
+========================= */
+
+h1 {
+    font-family: Arial;
+    color: #ff4f91;
+    text-align: center;
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+    color: #d94f83;
+}
+
+p {
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SELECTOR CLASS
+========================= */
+
+.headline {
+    font-family: Arial;
+    font-size: 18px;
+    color: #ff5c9d;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sublines {
+    font-family: Arial;
+    font-size: 14px;
+    color: #9c4c73;
+    font-weight: bold;
+    text-align: center;
+}
+
+.infotext {
+    font-family: Arial;
+    font-size: 14px;
+    color: #6f4960;
+}
+
+
+/* =========================
+   NAVIGASI HORIZONTAL
+========================= */
+
+#menu,
+#menu li,
+#menu ul,
+#menu a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+#menu {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #ff6fae, #ffb6d3);
+    list-style: none;
+}
+
+#menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    height: 50px;
+}
+
+#menu li a {
+    display: block;
+    padding: 0 20px;
+    margin: 10px 0;
+    line-height: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#menu li a:hover {
+    color: #ffe0ec;
+}
+
+
+/* =========================
+   DROPDOWN MENU
+========================= */
+
+#menu ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    opacity: 0;
+    background-color: #ff91bd;
+    transition: opacity 0.25s ease;
+}
+
+#menu li:hover > ul {
+    opacity: 1;
+}
+
+#menu ul li {
+    width: 150px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s ease;
+}
+
+#menu li:hover > ul li {
+    height: 45px;
+}
+
+#menu ul li a:hover {
+    background-color: #fff0f6;
+    color: #ff4f91;
+}
+
+
+/* =========================
+   HOME / HERO
+========================= */
+
+.hero {
+    min-height: 500px;
+    padding-top: 50px;
+    text-align: center;
+
+    background:
+    #ffd9e8
+    url("661573.jpg")
+    no-repeat
+    fixed
+    center;
+
+    background-size: cover;
+}
+
+.kotak-transparan {
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+
+    background-color: rgba(255, 255, 255, 0.80);
+
+    border: 4px solid #ff9fc3;
+
+    border-radius: 30px;
+}
+
+
+/* =========================
+   FOTO HOME
+========================= */
+
+.foto-home {
+    width: 180px;
+    height: 230px;
+
+    object-fit: cover;
+
+    border: 5px solid #ff91bd;
+
+    border-radius: 30px;
+
+    opacity: 0.85;
+}
+
+.foto-home:hover {
+    opacity: 1;
+}
+
+
+/* =========================
+   TOMBOL
+========================= */
+
+.tombol {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 25px;
+
+    background-color: #ff6fae;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 25px;
+}
+
+.tombol:hover {
+    background-color: #ff4f91;
+}
+
+
+/* =========================
+   HOME CONTENT
+========================= */
+
+.home-content {
+    width: 90%;
+    margin: 30px auto;
+
+    text-align: center;
+}
+
+.home-box {
+    display: flex;
+
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+
+    margin: 15px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border: 3px solid #ffd0e1;
+
+    border-radius: 25px;
+}
+
+.card a {
+    display: inline-block;
+
+    padding: 10px;
+
+    background-color: #ff91bd;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+}
+
+.card a:hover {
+    background-color: #ff4f91;
+}
+
+
+/* =========================
+   JUDUL HALAMAN
+========================= */
+
+.judul-halaman {
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #ffe5f0;
+}
+
+
+/* =========================
+   LAYOUT 3 KOLOM
+========================= */
+
+.container {
+    width: 95%;
+
+    margin: 20px auto;
+
+    overflow: hidden;
+}
+
+#sidebar-kiri {
+    min-height: 600px;
+
+    float: left;
+
+    width: 28%;
+
+    margin: 1%;
+
+    padding: 15px;
+
+    background-color: white;
+
+    border: 3px solid #ffd0e1;
+
+    border-radius: 25px;
+
+    box-sizing: border-box;
+}
+
+#sidebar-tengah-atau-badan {
+    min-height: 600px;
+
+    float: left;
+
+    width: 38%;
+
+    margin: 1%;
+
+    padding: 20px;
+
+    background-color: #fff7fb;
+
+    border: 3px solid #ffd0e1;
+
+    border-radius: 25px;
+
+    box-sizing: border-box;
+}
+
+#sidebar-kanan {
+    min-height: 600px;
+
+    float: left;
+
+    width: 28%;
+
+    margin: 1%;
+
+    padding: 15px;
+
+    background-color: white;
+
+    border: 3px solid #ffd0e1;
+
+    border-radius: 25px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   FOTO PROFIL
+========================= */
+
+.foto-profil {
+    display: block;
+
+    width: 180px;
+
+    height: 230px;
+
+    margin: auto;
+
+    object-fit: cover;
+
+    border: 5px solid #ff91bd;
+
+    border-radius: 30px;
+
+    opacity: 0.75;
+}
+
+.foto-profil:hover {
+    opacity: 1;
+}
+
+
+/* =========================
+   BOX PROFIL
+========================= */
+
+.box {
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    background-color: #ffe5f0;
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   HOBI
+========================= */
+
+.hobi {
+    text-align: center;
+}
+
+.hobi span {
+    display: inline-block;
+
+    margin: 5px;
+
+    padding: 10px;
+
+    background-color: #ffd1e3;
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   SKILL
+========================= */
+
+.skill-box {
+    padding: 15px;
+
+    background-color: #fff0f6;
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   FUN FACT
+========================= */
+
+.funfact {
+    padding: 15px;
+
+    background-color: #ffe5f0;
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   DROPDOWN BUTTON
+========================= */
+
+.dropdown {
+    position: relative;
+
+    display: inline-block;
+
+    margin-top: 20px;
+}
+
+.dropbtn {
+    background-color: #ff6fae;
+
+    color: white;
+
+    padding: 12px;
+
+    font-size: 15px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+
+    position: absolute;
+
+    background-color: #fff7fb;
+
+    min-width: 180px;
+
+    box-shadow: 0px 8px 16px
+    rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    display: block;
+
+    padding: 12px 16px;
+
+    color: #5b3a52;
+
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffd1e3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ff4f91;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    width: 90%;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border: 3px solid #ffd0e1;
+
+    border-radius: 30px;
+}
+
+.foto-container {
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.foto-box {
+    margin: 15px;
+}
+
+
+/* =========================
+   FOTO KECIL
+========================= */
+
+.foto-kecil {
+    width: 90px;
+
+    height: 120px;
+
+    object-fit: cover;
+
+    border: 4px solid #ff91bd;
+
+    border-radius: 20px;
+
+    opacity: 0.6;
+}
+
+
+/* =========================
+   FOTO SEDANG
+========================= */
+
+.foto-sedang {
+    width: 150px;
+
+    height: 190px;
+
+    object-fit: cover;
+
+    border: 4px solid #ff91bd;
+
+    border-radius: 20px;
+
+    opacity: 0.7;
+}
+
+
+/* =========================
+   FOTO BESAR
+========================= */
+
+.foto-besar {
+    width: 200px;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    border: 4px solid #ff91bd;
+
+    border-radius: 20px;
+
+    opacity: 0.8;
+}
+
+
+/* =========================
+   FOTO KENANGAN
+========================= */
+
+.foto-kenangan {
+    width: 250px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border: 5px solid #ff91bd;
+
+    border-radius: 30px;
+
+    opacity: 0.8;
+}
+
+
+/* =========================
+   HOVER GAMBAR
+========================= */
+
+.foto-kecil:hover,
+.foto-sedang:hover,
+.foto-besar:hover,
+.foto-kenangan:hover {
+    opacity: 1;
+}
+
+
+/* =========================
+   LAYOUT 2 KOLOM
+========================= */
+
+.layout-dua-kolom {
+    width: 90%;
+
+    margin: 30px auto;
+
+    overflow: hidden;
+
+    background-color: #ffe5f0;
+
+    border-radius: 25px;
+}
+
+.leftcolumn {
+    float: left;
+
+    width: 30%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+.rightcolumn {
+    margin-left: 30%;
+
+    min-height: 500px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 0 25px 25px 0;
+}
+
+
+/* =========================
+   NAVIGASI VERTIKAL
+========================= */
+
+.nav-vertikal {
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.nav-vertikal li a {
+    display: block;
+
+    margin-bottom: 8px;
+
+    padding: 10px;
+
+    background-color: #ff91bd;
+
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 15px;
+}
+
+.nav-vertikal li a:hover {
+    background-color: #ff4f91;
+}
+
+
+/* =========================
+   FOTO CONTACT
+========================= */
+
+.foto-contact {
+    display: block;
+
+    width: 150px;
+
+    height: 200px;
+
+    margin: 25px auto;
+
+    object-fit: cover;
+
+    border: 4px solid #ff91bd;
+
+    border-radius: 25px;
+
+    opacity: 0.8;
+}
+
+.foto-contact:hover {
+    opacity: 1;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-info {
+    padding: 20px;
+
+    background-color: #fff0f6;
+
+    border-radius: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+
+    padding: 10px;
+
+    border: 2px solid #ffb6d3;
+
+    border-radius: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    padding: 12px 25px;
+
+    background-color: #ff6fae;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff4f91;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    clear: both;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background:
+    linear-gradient(to right, #ff9fc3, #ffd1e3);
+
+    color: white;
+}
+
+.footer p {
+    color: white;
+}
