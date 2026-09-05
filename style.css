@@ -739,46 +739,43 @@ p {
 
 .contact-info {
     padding: 20px;
-
     background-color: #fff0f6;
-
     border-radius: 20px;
+    box-sizing: border-box;
 }
 
+/* Kotak Nama, Email, dan Pesan */
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 90%;
-
+    width: 100%;
     padding: 10px;
-
     border: 2px solid #ffb6d3;
-
     border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Verdana, Arial, sans-serif;
 }
 
+/* Kotak Pesan */
 textarea {
     height: 100px;
+    resize: vertical;
 }
 
+/* Tombol Kirim */
 input[type="submit"] {
     padding: 12px 25px;
-
+    margin-top: 10px;
     background-color: #ff6fae;
-
     color: white;
-
     border: none;
-
     border-radius: 20px;
-
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
     background-color: #ff4f91;
 }
-
 
 /* =========================
    FOOTER
