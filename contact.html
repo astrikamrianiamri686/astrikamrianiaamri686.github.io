@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <title>Contact Me</title>
@@ -96,16 +97,21 @@
 
             <div class="contact-item">
 
+                <p id="instagram">
                     <b>Instagram:</b><br>
+
                     <a href="https://www.instagram.com/purplecatty_/"
-                    target="_blank">
-                    purplecatty_</a>
-            </div>
+                       target="_blank">
+                        purplecatty_
+                    </a>
+                </p>
+
 
                 <p id="email">
                     <b>Email:</b><br>
                     astrikamrianiamri686@gmail.com
                 </p>
+
 
                 <p>
                     <b>WhatsApp:</b><br>
@@ -117,12 +123,14 @@
 
             <h2>💗 Kirim Pesan</h2>
 
-            <form>
+
+            <form id="formPesan">
 
                 <label>Nama:</label>
                 <br>
 
                 <input type="text"
+                       id="nama"
                        placeholder="Masukkan nama kamu">
 
                 <br><br>
@@ -132,6 +140,7 @@
                 <br>
 
                 <input type="email"
+                       id="emailInput"
                        placeholder="Masukkan email kamu">
 
                 <br><br>
@@ -140,11 +149,11 @@
                 <label>Pesan:</label>
                 <br>
 
-                <textarea
-                    placeholder="Tulis pesan kamu di sini...">
-                </textarea>
+                <textarea id="pesan"
+                          placeholder="Tulis pesan kamu di sini..."></textarea>
 
                 <br><br>
+
 
                 <input type="submit"
                        value="Kirim Pesan ♡">
@@ -165,5 +174,10 @@
 
     </div>
 
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
